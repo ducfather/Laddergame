@@ -1,0 +1,3 @@
+﻿  main.cpp
+Board.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: __cdecl Position::Position(void)" (??0Position@@QEAA@XZ)" in Funktion ""public: __cdecl Board::Board(void)" (??0Board@@QEAA@XZ)".
+C:\Users\Duc\Desktop\Snek\Snek\x64\Debug\Snek.exe : fatal error LNK1120: 1 nicht aufgelöste Externe
