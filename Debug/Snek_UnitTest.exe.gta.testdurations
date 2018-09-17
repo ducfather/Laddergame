@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Executable>C:\Users\Duc\Desktop\Snek\Snek\Debug\Snek_UnitTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="MovingPlayer.movePlayerBy3" Duration="1" />
+    <TestDuration Test="MovingPlayer.movePlayerBy3And4" Duration="1" />
+    <TestDuration Test="initializeGame.startGame" Duration="1" />
+    <TestDuration Test="MovingPlayer.moveBy3" Duration="1" />
+    <TestDuration Test="MovingPlayer.moveBy3And4" Duration="1" />
+    <TestDuration Test="InitializeGame.startGame" Duration="1" />
+    <TestDuration Test="Dice.throwDice" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>

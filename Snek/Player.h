@@ -10,6 +10,7 @@ public:
 
 	int playerId;
 	Position playerPos;
+	bool wonGame;
 
 };
 

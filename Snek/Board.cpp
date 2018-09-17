@@ -8,22 +8,37 @@ Board::Board(int numberOfPlayers)
 {
 	fillField();
 	placePlayers(numberOfPlayers);
+	initializeDice();
 }
-
-
 
 Board::~Board()
 {
 }
 
-Position Board::move(Player &player, int steps) {
-	
-	auto currentPlayer = player;
-	auto oldPosition = player.playerPos.posId;
-	player.playerPos =  field[oldPosition + steps-1];
-	return currentPlayer.playerPos;
+void Board::initializeDice()
+{
+	Dice die;
+	dice = die;
 }
 
+
+Position Board::move(Player &player, int steps) {
+	
+	int oldPositionVal = player.playerPos.posId;
+
+
+	player.playerPos =  field[oldPositionVal + steps-1];
+
+
+
+	return player.playerPos;
+}
+
+Position Board::moveByDice(Player &player) {
+
+	int dieNumber = dice.throwDice();
+	return move(player, dieNumber);
+}
 
 
 void Board::placePlayers(int numberOfPlayers) {
@@ -32,9 +47,13 @@ void Board::placePlayers(int numberOfPlayers) {
 	}
 }
 
-
 Position Board::getStartPos() {
 	return field[0];
+}
+
+Position Board::getLastPos() {
+
+	return field[100];
 }
 
 void Board::fillField() 

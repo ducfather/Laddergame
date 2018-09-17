@@ -9,6 +9,7 @@ Player::Player()
 Player::Player(int id, Position initialPos) {
 	playerId = id;
 	playerPos = initialPos;
+	wonGame = false;
 }
 
 
